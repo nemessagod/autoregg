@@ -23,6 +23,6 @@ with requests.Session() as session:
     response = session.post(registration_url, data=payload)
 
     if response.status_code == 200:
-        print('Регистрация прошла успешно!')
+        print('nice reg!!')
     else:
-        print('Ошибка при регистрации:', response.status_code)
+        print('error reg', response.status_code)
