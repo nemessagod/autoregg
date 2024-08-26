@@ -25,4 +25,4 @@ with requests.Session() as session:
     if response.status_code == 200:
         print('nice reg!!')
     else:
-        print('error reg', response.status_code)
+        print('error reg:', response.status_code)
